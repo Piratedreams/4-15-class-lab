@@ -13,11 +13,11 @@
     
    <form action="/robots/<%=i%>?_method=DELETE" method="POST">
                       <button type="submit">Delete</button>
-
-
-
-
-        <button type='delete' class='delete-button'>Delete</button>
+        <% for(let i = 0; i < robots.length; i++) {%>
+        <ul><li><link src='<%=robots[i]%>
+        <button type='delete' class='delete-button'>Delete</button></li></ul>'
+        <%}%>
     </form>
+    <button class='edit-link'>edit</button>
 </body>
 </html>
