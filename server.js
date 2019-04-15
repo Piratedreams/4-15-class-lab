@@ -3,6 +3,11 @@ const bodyParser = require('body-parser');
 
 
 
+app.get('/index', (req, res) => {
+    res.render('index.ejs');
+});
+
+
 
 
 
